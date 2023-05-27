@@ -112,3 +112,14 @@ Thumbs.db
 /ios/xcode/native/
 /ios/IOSLauncher.app
 /ios/IOSLauncher.app.dSYM
+
+# LibGDX
+/.gradle/
+/.idea/
+/.project
+/.settings/
+/run/
+/build/
+/libs/
+/gradlew
+/gradlew.bat
