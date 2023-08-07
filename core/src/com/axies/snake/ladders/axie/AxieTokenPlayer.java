@@ -2,6 +2,7 @@ package com.axies.snake.ladders.axie;
 
 import com.axies.snake.ladders.axie.factorys.AxieCreator;
 import com.axies.snake.ladders.roninwallet.RoninAccount;
+import com.axies.snake.ladders.table.BoxSimple;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.Color;
@@ -21,6 +22,7 @@ public class AxieTokenPlayer {
     AxieToken axieToken;
     RoninAccount roninAccount;
     AxieCreator axieCreator;
+    BoxSimple boxSimple;
 
     public AxieTokenPlayer(Texture img,AxieToken axieToken) {
         //this.axieToken = axieToken;
@@ -35,7 +37,7 @@ public class AxieTokenPlayer {
     }
 
     public void Update(float deltaTime){
-        if(Gdx.input.isKeyPressed(Input.Keys.A)) {
+        /*if(Gdx.input.isKeyPressed(Input.Keys.A)) {
             position.x-=deltaTime*speed;
             Gdx.app.log("Posicion X: ",String.valueOf(position.x));
             Gdx.app.log("tamaño: ",String.valueOf((sprite.getTexture().getWidth()*sprite.getScaleX())/4));
@@ -60,6 +62,7 @@ public class AxieTokenPlayer {
         if(Math.abs(position.y)+(sprite.getTexture().getHeight()*sprite.getScaleY())/4>Gdx.graphics.getHeight()/2) position.y=((sprite.getHeight()/2)-(sprite.getTexture().getHeight()*sprite.getScaleY())/4)*Math.signum(position.y);
 
         //if(position.x+(sprite.getWidth()*sprite.getScaleX()/2)>=Gdx.graphics.getWidth()) position.x=Gdx.graphics.getWidth()-(sprite.getWidth()*sprite.getScaleX()/2);
+        */
     }
     public void Draw(SpriteBatch batch){
         Update(Gdx.graphics.getDeltaTime());
